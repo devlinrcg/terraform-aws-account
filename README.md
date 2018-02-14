@@ -1,4 +1,13 @@
 ### Terraform AWS Account
+Components created:
+* One (1) VPC
+* Two (2) Subnets: one private, one public
+* One (1) NAT Gateway for the private subnet
+* One (1) Internet Gateway for the public subnet
+* Two (2) Route Tables
+* AWS Config
+* AWS Cloudtrail (all Regions, all APIs)
+
 Usage:
 1. [Install the AWS CLI](https://aws.amazon.com/cli/)
 2. [Install Terraform](https://www.terraform.io/downloads.html)
@@ -23,6 +32,8 @@ terraform plan
 ```
 terraform apply
 ```
+
+The output will be provides with the entries in outputs.tf (basic information)
 
 TO DO:
 * tbd
